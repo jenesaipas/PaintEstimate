@@ -1,0 +1,36 @@
+<!--	Author:
+	Date:
+	File:	paintEstimate.txt
+	Purpose:Chapter 3 Exercise
+-->
+
+paintEstimate.html algorithm:
+
+Prompt roomLength
+Enter length in feet
+Prompt roomWidth
+Enter width in feet
+Prompt roomHeight
+Enter height in feet
+Submit length, width, height to paintestimate.php
+
+END
+
+
+
+paintEstimate.php algorithm:
+
+Receive roomLength, roomWidth and roomHeight from paintEstimate.html
+
+longWalls = roomLength * roomHeight * 2
+wideWalls = roomWidth * roomHeight * 2 
+roomCeiling = roomWidth * roomLength
+roomArea = longWalls + wideWalls + roomCeiling
+paintReq = roomArea / 400
+paintCost = paintReq * 17
+laborCost = roomArea / 200 * 25.00
+totalCost = paintCost + laborCost
+
+Display roomLength, roomWidth, roomHeight, rooomArea, paintCost, laborCost, totalCost
+
+END
